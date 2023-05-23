@@ -9,11 +9,11 @@ public class MainApp {
         Queue<String> operations;
         Queue<String> numbers;
 
-        String numberArr[] = inputExp.split("[-+*/]");
-        String openArr[] = inputExp.split("[0-9]+");
+        String[] numberArr = inputExp.split("[-+*/]");
+        String[] openArr = inputExp.split("[0-9]+");
 
-        numbers = new LinkedList<String>(Arrays.asList(numberArr));
-        operations = new LinkedList<String>(Arrays.asList(openArr));
+        numbers = new LinkedList<>(Arrays.asList(numberArr));
+        operations = new LinkedList<>(Arrays.asList(openArr));
 
         Double res = Double.parseDouble(Objects.requireNonNull(numbers.poll()));
 
