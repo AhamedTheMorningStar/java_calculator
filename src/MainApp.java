@@ -5,6 +5,7 @@ import java.util.Queue;
 
 public class MainApp {
     public static void main(String[] args) {
+        System.out.println("Welcome to Java World.....");
         final String inputExp = ReadInput.read();
         Queue<String> operations;
         Queue<String> numbers;
